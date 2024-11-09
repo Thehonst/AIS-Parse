@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/a.dir/src/AISPare.cpp.o CMakeFiles/a.dir/src/Time.cpp.o CMakeFiles/a.dir/src/file.cpp.o CMakeFiles/a.dir/src/main.cpp.o CMakeFiles/a.dir/src/type_haddle.cpp.o  -o ../bin/a 
