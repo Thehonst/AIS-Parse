@@ -1,0 +1,3 @@
+/home/mzf/code/workspace/AIS_parse/build/CMakeFiles/rebuild_cache.dir
+/home/mzf/code/workspace/AIS_parse/build/CMakeFiles/edit_cache.dir
+/home/mzf/code/workspace/AIS_parse/build/CMakeFiles/a.dir

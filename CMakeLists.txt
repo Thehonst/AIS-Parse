@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.10)
+project(AISPraserser)
+set(CMAKE_CXX_STANDARD 11)
+set(PATH /home/mzf/code/workspace/AIS_parse)
+set(EXECUTABLE_OUTPUT_PATH ${PATH}/bin)
+# add_executable(a main.cpp;file.cpp;Time.cpp;
+#                 AISPare.cpp;type_haddle.cpp)
+include_directories(${PATH}/include)
+aux_source_directory(${PATH}/src SRC)
+add_executable(a ${SRC})
