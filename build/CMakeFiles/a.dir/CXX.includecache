@@ -16,6 +16,12 @@ ctime
 iomanip
 -
 
+../include/boatlog.h
+map
+-
+vector
+-
+
 ../include/file.h
 fstream
 -
@@ -27,6 +33,12 @@ vector
 -
 type_haddle.h
 ../include/type_haddle.h
+
+../include/split.h
+vector
+-
+string
+-
 
 ../include/type_haddle.h
 iostream
@@ -56,8 +68,18 @@ iomanip
 cstring
 -
 
+/home/mzf/code/workspace/AIS_parse/src/boatlog.cpp
+map
+-
+boatlog.h
+/home/mzf/code/workspace/AIS_parse/src/boatlog.h
+iostream
+-
+
 /home/mzf/code/workspace/AIS_parse/src/file.cpp
 iostream
+-
+fstream
 -
 string
 -
@@ -67,6 +89,10 @@ memory
 -
 file.h
 /home/mzf/code/workspace/AIS_parse/src/file.h
+split.h
+/home/mzf/code/workspace/AIS_parse/src/split.h
+boatlog.h
+/home/mzf/code/workspace/AIS_parse/src/boatlog.h
 
 /home/mzf/code/workspace/AIS_parse/src/main.cpp
 iostream
@@ -83,6 +109,10 @@ sstream
 -
 ctime
 -
+map
+-
+split.h
+/home/mzf/code/workspace/AIS_parse/src/split.h
 Time.h
 /home/mzf/code/workspace/AIS_parse/src/Time.h
 type_haddle.h
@@ -91,6 +121,20 @@ file.h
 /home/mzf/code/workspace/AIS_parse/src/file.h
 AISPare.h
 /home/mzf/code/workspace/AIS_parse/src/AISPare.h
+boatlog.h
+/home/mzf/code/workspace/AIS_parse/src/boatlog.h
+
+/home/mzf/code/workspace/AIS_parse/src/split.cpp
+sstream
+-
+fstream
+-
+vector
+-
+string
+-
+split.h
+/home/mzf/code/workspace/AIS_parse/src/split.h
 
 /home/mzf/code/workspace/AIS_parse/src/type_haddle.cpp
 type_haddle.h

@@ -177,6 +177,33 @@ src/Time.cpp.s:
 	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/Time.cpp.s
 .PHONY : src/Time.cpp.s
 
+src/boatlog.o: src/boatlog.cpp.o
+
+.PHONY : src/boatlog.o
+
+# target to build an object file
+src/boatlog.cpp.o:
+	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/boatlog.cpp.o
+.PHONY : src/boatlog.cpp.o
+
+src/boatlog.i: src/boatlog.cpp.i
+
+.PHONY : src/boatlog.i
+
+# target to preprocess a source file
+src/boatlog.cpp.i:
+	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/boatlog.cpp.i
+.PHONY : src/boatlog.cpp.i
+
+src/boatlog.s: src/boatlog.cpp.s
+
+.PHONY : src/boatlog.s
+
+# target to generate assembly for a file
+src/boatlog.cpp.s:
+	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/boatlog.cpp.s
+.PHONY : src/boatlog.cpp.s
+
 src/file.o: src/file.cpp.o
 
 .PHONY : src/file.o
@@ -231,6 +258,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/split.o: src/split.cpp.o
+
+.PHONY : src/split.o
+
+# target to build an object file
+src/split.cpp.o:
+	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/split.cpp.o
+.PHONY : src/split.cpp.o
+
+src/split.i: src/split.cpp.i
+
+.PHONY : src/split.i
+
+# target to preprocess a source file
+src/split.cpp.i:
+	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/split.cpp.i
+.PHONY : src/split.cpp.i
+
+src/split.s: src/split.cpp.s
+
+.PHONY : src/split.s
+
+# target to generate assembly for a file
+src/split.cpp.s:
+	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/split.cpp.s
+.PHONY : src/split.cpp.s
+
 src/type_haddle.o: src/type_haddle.cpp.o
 
 .PHONY : src/type_haddle.o
@@ -273,12 +327,18 @@ help:
 	@echo "... src/Time.o"
 	@echo "... src/Time.i"
 	@echo "... src/Time.s"
+	@echo "... src/boatlog.o"
+	@echo "... src/boatlog.i"
+	@echo "... src/boatlog.s"
 	@echo "... src/file.o"
 	@echo "... src/file.i"
 	@echo "... src/file.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/split.o"
+	@echo "... src/split.i"
+	@echo "... src/split.s"
 	@echo "... src/type_haddle.o"
 	@echo "... src/type_haddle.i"
 	@echo "... src/type_haddle.s"

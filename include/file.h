@@ -25,6 +25,8 @@ public:
     std::ofstream outfile21;
     std::ofstream outfile24A;
     std::ofstream outfile24B;
+
+    std::ofstream log;
     //std::string str1="/home/mzf/data/动态数据.txt";
 };
 
