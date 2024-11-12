@@ -1,10 +1,11 @@
 #include<iostream>
-
+#include<fstream>
 #include<string>
 #include<vector>
 #include<memory>
 #include "file.h"
-
+#include"split.h"
+#include"boatlog.h"
 using namespace std;
 File::File() {}
 File::~File() 
@@ -14,6 +15,8 @@ File::~File()
   outfile21.close();
   outfile24A.close();
   outfile24B.close();
+
+  log.close();
 }
 void File::createFile()
 {
@@ -39,6 +42,9 @@ void File::createFile()
     outfile21.open("/home/mzf/data/消息21.txt");
     outfile24A.open("/home/mzf/data/消息24A.txt");
     outfile24B.open("/home/mzf/data/消息24B.txt");
+
+
+    log.open("/home/mzf/data/log.txt");
 }
 void File::openFile()
 {
@@ -47,6 +53,7 @@ void File::openFile()
   std::ofstream& outfile21 = this->outfile21;
   std::ofstream& outfile24A = this->outfile24A;
   std::ofstream& outfile24B = this->outfile24B;
+  std::ofstream& log = this->log;
 }
 void File::createHeader()
 {
@@ -84,6 +91,7 @@ void File::contentWrite(char* timeStr,std::vector<std::string> &line_split,strin
 
   if (flag == 123)
   {
+    
     MsgHaddle t1=Msg.haddle1(data_bin);
     new_line1.assign({timeStr, line_split[2], line_split[3], line_split[5], 
             to_string(t1.Type), to_string(t1.MMSI),to_string(t1.TransCount),
