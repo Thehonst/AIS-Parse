@@ -12,6 +12,8 @@ public:
     ~MsgHaddle();
     MsgHaddle haddle1(std::string data);
     MsgHaddle haddle5(std::string data);
+    MsgHaddle haddle18(std::string data);
+    MsgHaddle haddle19(std::string data);
     MsgHaddle haddle21(std::string data);
     MsgHaddle haddle24A(std::string data);
     MsgHaddle haddle24B(std::string data);
@@ -46,6 +48,44 @@ public:
     uint32_t dest;      //目的地
     uint32_t Terminal;  //终端
 
+    //18号报文
+    uint32_t Reserve; //备用
+    //uint32_t SOG; //
+    //uint32_t PosAcc; //Position Accuracy
+    //float lon; //经度
+    //float lat; //纬度
+    //uint32_t COG; //Course Over Ground
+    //uint32_t TrueHeading;
+    //uint32_t TimeStamp;
+    uint32_t Reserve2; //备用2
+    uint32_t B_Flag; //0 = B类SOTDMA装置 1 = B类 “CS”装置
+    uint32_t B_Screen; //显示器标志
+    uint32_t DSC;  //B类DSC
+    uint32_t Band; //B类带宽
+    uint32_t B_22;
+    uint32_t Mode; //B类模式
+    //uint32_t RAIM; //B类RAIM
+    uint32_t CommState_; //通信状态标志
+    uint32_t CommState; //通信状态
+
+    //19号报文
+    //uint32_t Reserve; //备用
+    //uint32_t SOG; //Speed Over Ground
+    //uint32_t PosAcc; //Position Accuracy
+    //float lon; //经度
+    //float lat; //纬度
+    //uint32_t COG; //Course Over Ground
+    //uint32_t TrueHeading;
+    //uint32_t TimeStamp;
+    //uint32_t Reserve2; //备用2
+    // uint32_t Name;
+    // uint32_t ShipType;     //船舶和货物类型   
+    // uint32_t PosRef;        //位置参考
+    // uint32_t ElecLocalType; //电子定位装置类型
+    //uint32_t RAIM;  //TRAIM
+    uint32_t DTE; //数据终端就绪
+    uint32_t AsigMod; //分配模式
+    uint32_t Reserve3; //备用3
 
     //21号报文
     uint32_t AidNavType;      //助航设备类型
@@ -74,8 +114,5 @@ public:
     //uint32_t size_posRef; //尺寸/ 位置参考点 
 
 };
-
-
-
 
 #endif // TYPE_HADDLE_H

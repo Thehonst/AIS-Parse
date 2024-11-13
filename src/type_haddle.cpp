@@ -51,8 +51,59 @@ MsgHaddle MsgHaddle::haddle5(string data)
     dest=field_parse(data,302,120);
     Terminal=field_parse(data,422,1);
     return *this;
-}
 
+}
+//消息18解析方法
+MsgHaddle MsgHaddle::haddle18(string data)
+{
+    Type=field_parse(data,0,6);
+    TransCount=field_parse(data,6,2);
+    MMSI=field_parse(data,8,30);
+    Reserve=field_parse(data,38,8);
+    SOG=field_parse(data,46,10)/10.0;
+    PosAcc=field_parse(data,56,1);
+    lon=lat_lon_convert(field_parse(data,57,28));
+    lat=lat_lon_convert(field_parse(data,85,27));
+    COG=field_parse(data,112,12)/10.0;
+    TrueHeading=field_parse(data,124,9);
+    TimeStamp=field_parse(data,133,6);
+    Reserve2=field_parse(data,139,2);
+    B_Flag=field_parse(data,141,1);
+    B_Screen=field_parse(data,142,1);
+    DSC=field_parse(data,143,1);
+    Band=field_parse(data,144,1);
+    B_22=field_parse(data,145,1);
+    Mode=field_parse(data,146,1);
+    RAIM=field_parse(data,147,1);
+    CommState_=field_parse(data,148,1);
+    CommState=field_parse(data,149,19);
+    return *this;
+}
+//消息19解析方法
+MsgHaddle MsgHaddle::haddle19(string data)
+{
+    Type=field_parse(data,0,6);
+    TransCount=field_parse(data,6,2);
+    MMSI=field_parse(data,8,30);
+    Reserve=field_parse(data,38,8);
+    SOG=field_parse(data,46,10)/10.0;
+    PosAcc=field_parse(data,56,1);
+    lon=lat_lon_convert(field_parse(data,57,28));
+    lat=lat_lon_convert(field_parse(data,85,27));
+    COG=field_parse(data,112,12)/10.0;
+    TrueHeading=field_parse(data,124,9);
+    TimeStamp=field_parse(data,133,6);
+    Reserve2=field_parse(data,139,4);
+    Name=field_parse(data,143,120);
+    ShipType=field_parse(data,263,8);
+    PosRef=field_parse(data,271,30);
+    ElecLocalType=field_parse(data,301,4);
+    RAIM=field_parse(data,305,1);
+    DTE=field_parse(data,306,1);
+    AsigMod=field_parse(data,307,1);
+    Reserve3=field_parse(data,308,4);
+    return *this;
+}
 //消息21解析方法
 MsgHaddle MsgHaddle::haddle21(string data)
 {

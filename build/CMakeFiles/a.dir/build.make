@@ -83,9 +83,22 @@ CMakeFiles/a.dir/src/Time.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a.dir/src/Time.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mzf/code/workspace/AIS_parse/src/Time.cpp -o CMakeFiles/a.dir/src/Time.cpp.s
 
+CMakeFiles/a.dir/src/boatlog.cpp.o: CMakeFiles/a.dir/flags.make
+CMakeFiles/a.dir/src/boatlog.cpp.o: ../src/boatlog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mzf/code/workspace/AIS_parse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/a.dir/src/boatlog.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a.dir/src/boatlog.cpp.o -c /home/mzf/code/workspace/AIS_parse/src/boatlog.cpp
+
+CMakeFiles/a.dir/src/boatlog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a.dir/src/boatlog.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mzf/code/workspace/AIS_parse/src/boatlog.cpp > CMakeFiles/a.dir/src/boatlog.cpp.i
+
+CMakeFiles/a.dir/src/boatlog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a.dir/src/boatlog.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mzf/code/workspace/AIS_parse/src/boatlog.cpp -o CMakeFiles/a.dir/src/boatlog.cpp.s
+
 CMakeFiles/a.dir/src/file.cpp.o: CMakeFiles/a.dir/flags.make
 CMakeFiles/a.dir/src/file.cpp.o: ../src/file.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mzf/code/workspace/AIS_parse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/a.dir/src/file.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mzf/code/workspace/AIS_parse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/a.dir/src/file.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a.dir/src/file.cpp.o -c /home/mzf/code/workspace/AIS_parse/src/file.cpp
 
 CMakeFiles/a.dir/src/file.cpp.i: cmake_force
@@ -96,9 +109,22 @@ CMakeFiles/a.dir/src/file.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a.dir/src/file.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mzf/code/workspace/AIS_parse/src/file.cpp -o CMakeFiles/a.dir/src/file.cpp.s
 
+CMakeFiles/a.dir/src/log_haddle.cpp.o: CMakeFiles/a.dir/flags.make
+CMakeFiles/a.dir/src/log_haddle.cpp.o: ../src/log_haddle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mzf/code/workspace/AIS_parse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/a.dir/src/log_haddle.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a.dir/src/log_haddle.cpp.o -c /home/mzf/code/workspace/AIS_parse/src/log_haddle.cpp
+
+CMakeFiles/a.dir/src/log_haddle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a.dir/src/log_haddle.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mzf/code/workspace/AIS_parse/src/log_haddle.cpp > CMakeFiles/a.dir/src/log_haddle.cpp.i
+
+CMakeFiles/a.dir/src/log_haddle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a.dir/src/log_haddle.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mzf/code/workspace/AIS_parse/src/log_haddle.cpp -o CMakeFiles/a.dir/src/log_haddle.cpp.s
+
 CMakeFiles/a.dir/src/main.cpp.o: CMakeFiles/a.dir/flags.make
 CMakeFiles/a.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mzf/code/workspace/AIS_parse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/a.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mzf/code/workspace/AIS_parse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/a.dir/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a.dir/src/main.cpp.o -c /home/mzf/code/workspace/AIS_parse/src/main.cpp
 
 CMakeFiles/a.dir/src/main.cpp.i: cmake_force
@@ -109,9 +135,22 @@ CMakeFiles/a.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mzf/code/workspace/AIS_parse/src/main.cpp -o CMakeFiles/a.dir/src/main.cpp.s
 
+CMakeFiles/a.dir/src/split.cpp.o: CMakeFiles/a.dir/flags.make
+CMakeFiles/a.dir/src/split.cpp.o: ../src/split.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mzf/code/workspace/AIS_parse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/a.dir/src/split.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a.dir/src/split.cpp.o -c /home/mzf/code/workspace/AIS_parse/src/split.cpp
+
+CMakeFiles/a.dir/src/split.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/a.dir/src/split.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mzf/code/workspace/AIS_parse/src/split.cpp > CMakeFiles/a.dir/src/split.cpp.i
+
+CMakeFiles/a.dir/src/split.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/a.dir/src/split.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mzf/code/workspace/AIS_parse/src/split.cpp -o CMakeFiles/a.dir/src/split.cpp.s
+
 CMakeFiles/a.dir/src/type_haddle.cpp.o: CMakeFiles/a.dir/flags.make
 CMakeFiles/a.dir/src/type_haddle.cpp.o: ../src/type_haddle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mzf/code/workspace/AIS_parse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/a.dir/src/type_haddle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mzf/code/workspace/AIS_parse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/a.dir/src/type_haddle.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/a.dir/src/type_haddle.cpp.o -c /home/mzf/code/workspace/AIS_parse/src/type_haddle.cpp
 
 CMakeFiles/a.dir/src/type_haddle.cpp.i: cmake_force
@@ -126,8 +165,11 @@ CMakeFiles/a.dir/src/type_haddle.cpp.s: cmake_force
 a_OBJECTS = \
 "CMakeFiles/a.dir/src/AISPare.cpp.o" \
 "CMakeFiles/a.dir/src/Time.cpp.o" \
+"CMakeFiles/a.dir/src/boatlog.cpp.o" \
 "CMakeFiles/a.dir/src/file.cpp.o" \
+"CMakeFiles/a.dir/src/log_haddle.cpp.o" \
 "CMakeFiles/a.dir/src/main.cpp.o" \
+"CMakeFiles/a.dir/src/split.cpp.o" \
 "CMakeFiles/a.dir/src/type_haddle.cpp.o"
 
 # External object files for target a
@@ -135,12 +177,15 @@ a_EXTERNAL_OBJECTS =
 
 ../bin/a: CMakeFiles/a.dir/src/AISPare.cpp.o
 ../bin/a: CMakeFiles/a.dir/src/Time.cpp.o
+../bin/a: CMakeFiles/a.dir/src/boatlog.cpp.o
 ../bin/a: CMakeFiles/a.dir/src/file.cpp.o
+../bin/a: CMakeFiles/a.dir/src/log_haddle.cpp.o
 ../bin/a: CMakeFiles/a.dir/src/main.cpp.o
+../bin/a: CMakeFiles/a.dir/src/split.cpp.o
 ../bin/a: CMakeFiles/a.dir/src/type_haddle.cpp.o
 ../bin/a: CMakeFiles/a.dir/build.make
 ../bin/a: CMakeFiles/a.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mzf/code/workspace/AIS_parse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ../bin/a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mzf/code/workspace/AIS_parse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ../bin/a"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/a.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
