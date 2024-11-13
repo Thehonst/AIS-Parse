@@ -51,6 +51,7 @@ MsgHaddle MsgHaddle::haddle5(string data)
     dest=field_parse(data,302,120);
     Terminal=field_parse(data,422,1);
     return *this;
+
 }
 
 //消息21解析方法

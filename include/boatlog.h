@@ -2,13 +2,15 @@
 #define BOATLOG_H
 #include<map>
 #include<vector>
+#include<string>
 struct Numb
 {
-    int count;
+    int count=0;
     int transmit;
     float Rate;
+    uint32_t lastTime=0;
     
-    std::vector<int> freq;
+    std::vector<std::string> freq;
 };
 class BoatLog
 {

@@ -1,11 +1,13 @@
+#include <iostream>
 #include<map>
 #include "boatlog.h"
-#include <iostream>
+#include"Time.h"
+
 BoatLog::BoatLog(){}
 BoatLog::~BoatLog(){}
 std::map<uint32_t,Numb> BoatLog::repeate(std::map<uint32_t,Numb> &Infos,
                                         uint32_t MMSI_,uint32_t value,uint32_t Time) {
-    uint32_t last_Time;
+    
     if (Infos.find(MMSI_) != Infos.end()) 
     {
         if (value==0)
@@ -21,7 +23,7 @@ std::map<uint32_t,Numb> BoatLog::repeate(std::map<uint32_t,Numb> &Infos,
             ++Infos[MMSI_].transmit;
             Infos[MMSI_].Rate=Infos[MMSI_].transmit/Infos[MMSI_].count;
         }
-        Infos[MMSI_].freq.push_back(Time-last_Time);
+        Infos[MMSI_].freq.push_back(Time_Convert(Time-Infos[MMSI_].lastTime));
     }
     else
         {
@@ -38,12 +40,12 @@ std::map<uint32_t,Numb> BoatLog::repeate(std::map<uint32_t,Numb> &Infos,
                 numb.transmit=1;
                 numb.Rate=1;
             }
-            numb.freq.push_back(0);
+            numb.freq.push_back(Time_Convert(0));
             Infos.insert(std::make_pair(MMSI_,numb));
             
         }
-        last_Time=Time;
-    
+    std::cout<<"MMSI: "<<" "<<Time<<" "<<Infos[MMSI_].lastTime<<std::endl;
+    Infos[MMSI_].lastTime=Time;
     return Infos;
 }
 

@@ -231,6 +231,33 @@ src/file.cpp.s:
 	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/file.cpp.s
 .PHONY : src/file.cpp.s
 
+src/log_haddle.o: src/log_haddle.cpp.o
+
+.PHONY : src/log_haddle.o
+
+# target to build an object file
+src/log_haddle.cpp.o:
+	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/log_haddle.cpp.o
+.PHONY : src/log_haddle.cpp.o
+
+src/log_haddle.i: src/log_haddle.cpp.i
+
+.PHONY : src/log_haddle.i
+
+# target to preprocess a source file
+src/log_haddle.cpp.i:
+	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/log_haddle.cpp.i
+.PHONY : src/log_haddle.cpp.i
+
+src/log_haddle.s: src/log_haddle.cpp.s
+
+.PHONY : src/log_haddle.s
+
+# target to generate assembly for a file
+src/log_haddle.cpp.s:
+	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/log_haddle.cpp.s
+.PHONY : src/log_haddle.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -333,6 +360,9 @@ help:
 	@echo "... src/file.o"
 	@echo "... src/file.i"
 	@echo "... src/file.s"
+	@echo "... src/log_haddle.o"
+	@echo "... src/log_haddle.i"
+	@echo "... src/log_haddle.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

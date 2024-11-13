@@ -5,6 +5,7 @@ CMakeFiles/a.dir/src/AISPare.cpp.o: ../src/AISPare.cpp
 
 CMakeFiles/a.dir/src/Time.cpp.o: ../src/Time.cpp
 
+CMakeFiles/a.dir/src/boatlog.cpp.o: ../include/Time.h
 CMakeFiles/a.dir/src/boatlog.cpp.o: ../include/boatlog.h
 CMakeFiles/a.dir/src/boatlog.cpp.o: ../src/boatlog.cpp
 
@@ -14,10 +15,15 @@ CMakeFiles/a.dir/src/file.cpp.o: ../include/split.h
 CMakeFiles/a.dir/src/file.cpp.o: ../include/type_haddle.h
 CMakeFiles/a.dir/src/file.cpp.o: ../src/file.cpp
 
+CMakeFiles/a.dir/src/log_haddle.cpp.o: ../include/boatlog.h
+CMakeFiles/a.dir/src/log_haddle.cpp.o: ../include/log_haddle.h
+CMakeFiles/a.dir/src/log_haddle.cpp.o: ../src/log_haddle.cpp
+
 CMakeFiles/a.dir/src/main.cpp.o: ../include/AISPare.h
 CMakeFiles/a.dir/src/main.cpp.o: ../include/Time.h
 CMakeFiles/a.dir/src/main.cpp.o: ../include/boatlog.h
 CMakeFiles/a.dir/src/main.cpp.o: ../include/file.h
+CMakeFiles/a.dir/src/main.cpp.o: ../include/log_haddle.h
 CMakeFiles/a.dir/src/main.cpp.o: ../include/split.h
 CMakeFiles/a.dir/src/main.cpp.o: ../include/type_haddle.h
 CMakeFiles/a.dir/src/main.cpp.o: ../src/main.cpp

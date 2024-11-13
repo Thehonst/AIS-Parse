@@ -4,7 +4,9 @@
 #include <string>
 #include<sstream>
 #include <vector>
+#include <map>
 #include "type_haddle.h"
+#include"boatlog.h"
 class File
 {
 public:
@@ -15,6 +17,7 @@ public:
     void createHeader();
     void contentWrite(char* timeStr,std::vector<std::string> &line_split,
                         std::string data_bin,std::vector<std::string> &new_line1,int flag);
+    void logWrite(std::map<uint32_t,Numb> Infos);
     std::vector<std::string> headers1;
     std::vector<std::string> headers5;
     std::vector<std::string> headers21;
