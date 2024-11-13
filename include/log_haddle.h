@@ -10,6 +10,8 @@ public:
     
     std::map<uint32_t,Numb> Infos1;
     std::map<uint32_t,Numb> Infos5;
+    std::map<uint32_t,Numb> Infos18;
+    std::map<uint32_t,Numb> Infos19;
     std::map<uint32_t,Numb> Infos21;
     std::map<uint32_t,Numb> Infos24A;
     std::map<uint32_t,Numb> Infos24B;

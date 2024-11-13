@@ -1,8 +1,6 @@
 #include <iostream>
 #include<map>
 #include "boatlog.h"
-#include"Time.h"
-
 BoatLog::BoatLog(){}
 BoatLog::~BoatLog(){}
 std::map<uint32_t,Numb> BoatLog::repeate(std::map<uint32_t,Numb> &Infos,
@@ -23,7 +21,7 @@ std::map<uint32_t,Numb> BoatLog::repeate(std::map<uint32_t,Numb> &Infos,
             ++Infos[MMSI_].transmit;
             Infos[MMSI_].Rate=Infos[MMSI_].transmit/Infos[MMSI_].count;
         }
-        Infos[MMSI_].freq.push_back(Time_Convert(Time-Infos[MMSI_].lastTime));
+        Infos[MMSI_].freq.push_back(Time-Infos[MMSI_].lastTime);
     }
     else
         {
@@ -40,9 +38,8 @@ std::map<uint32_t,Numb> BoatLog::repeate(std::map<uint32_t,Numb> &Infos,
                 numb.transmit=1;
                 numb.Rate=1;
             }
-            numb.freq.push_back(Time_Convert(0));
+            numb.freq.push_back(0);
             Infos.insert(std::make_pair(MMSI_,numb));
-            
         }
     std::cout<<"MMSI: "<<" "<<Time<<" "<<Infos[MMSI_].lastTime<<std::endl;
     Infos[MMSI_].lastTime=Time;

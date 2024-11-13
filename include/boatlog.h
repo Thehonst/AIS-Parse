@@ -9,8 +9,15 @@ struct Numb
     int transmit;
     float Rate;
     uint32_t lastTime=0;
-    
-    std::vector<std::string> freq;
+    enum AISType { A,AtoN,Station,AIST,B};//"A", "AtoN","基站","AIS台","B"
+    std::map<AISType,std::string> AISTypeToString={
+        {A,"A"},
+        {AtoN,"AtoN"},
+        {Station,"基站"},
+        {AIST,"AIS台"},
+        {B,"B"}
+    };
+    std::vector<uint32_t> freq;
 };
 class BoatLog
 {
