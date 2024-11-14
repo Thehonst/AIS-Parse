@@ -46,6 +46,12 @@ map
 boatlog.h
 ../include/boatlog.h
 
+../include/speedStdRep.h
+string
+-
+boatlog.h
+../include/boatlog.h
+
 ../include/split.h
 vector
 -
@@ -87,8 +93,6 @@ map
 -
 boatlog.h
 /home/mzf/code/workspace/AIS_parse/src/boatlog.h
-Time.h
-/home/mzf/code/workspace/AIS_parse/src/Time.h
 
 /home/mzf/code/workspace/AIS_parse/src/file.cpp
 iostream
@@ -107,6 +111,10 @@ split.h
 /home/mzf/code/workspace/AIS_parse/src/split.h
 boatlog.h
 /home/mzf/code/workspace/AIS_parse/src/boatlog.h
+speedStdRep.h
+/home/mzf/code/workspace/AIS_parse/src/speedStdRep.h
+Time.h
+/home/mzf/code/workspace/AIS_parse/src/Time.h
 
 /home/mzf/code/workspace/AIS_parse/src/log_haddle.cpp
 log_haddle.h
@@ -143,6 +151,14 @@ boatlog.h
 /home/mzf/code/workspace/AIS_parse/src/boatlog.h
 log_haddle.h
 /home/mzf/code/workspace/AIS_parse/src/log_haddle.h
+
+/home/mzf/code/workspace/AIS_parse/src/speedStdRep.cpp
+string
+-
+boatlog.h
+/home/mzf/code/workspace/AIS_parse/src/boatlog.h
+speedStdRep.h
+/home/mzf/code/workspace/AIS_parse/src/speedStdRep.h
 
 /home/mzf/code/workspace/AIS_parse/src/split.cpp
 sstream

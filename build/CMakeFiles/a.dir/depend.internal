@@ -6,12 +6,13 @@ CMakeFiles/a.dir/src/AISPare.cpp.o
 CMakeFiles/a.dir/src/Time.cpp.o
  /home/mzf/code/workspace/AIS_parse/src/Time.cpp
 CMakeFiles/a.dir/src/boatlog.cpp.o
- ../include/Time.h
  ../include/boatlog.h
  /home/mzf/code/workspace/AIS_parse/src/boatlog.cpp
 CMakeFiles/a.dir/src/file.cpp.o
+ ../include/Time.h
  ../include/boatlog.h
  ../include/file.h
+ ../include/speedStdRep.h
  ../include/split.h
  ../include/type_haddle.h
  /home/mzf/code/workspace/AIS_parse/src/file.cpp
@@ -28,6 +29,10 @@ CMakeFiles/a.dir/src/main.cpp.o
  ../include/split.h
  ../include/type_haddle.h
  /home/mzf/code/workspace/AIS_parse/src/main.cpp
+CMakeFiles/a.dir/src/speedStdRep.cpp.o
+ ../include/boatlog.h
+ ../include/speedStdRep.h
+ /home/mzf/code/workspace/AIS_parse/src/speedStdRep.cpp
 CMakeFiles/a.dir/src/split.cpp.o
  ../include/split.h
  /home/mzf/code/workspace/AIS_parse/src/split.cpp

@@ -285,6 +285,33 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/speedStdRep.o: src/speedStdRep.cpp.o
+
+.PHONY : src/speedStdRep.o
+
+# target to build an object file
+src/speedStdRep.cpp.o:
+	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/speedStdRep.cpp.o
+.PHONY : src/speedStdRep.cpp.o
+
+src/speedStdRep.i: src/speedStdRep.cpp.i
+
+.PHONY : src/speedStdRep.i
+
+# target to preprocess a source file
+src/speedStdRep.cpp.i:
+	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/speedStdRep.cpp.i
+.PHONY : src/speedStdRep.cpp.i
+
+src/speedStdRep.s: src/speedStdRep.cpp.s
+
+.PHONY : src/speedStdRep.s
+
+# target to generate assembly for a file
+src/speedStdRep.cpp.s:
+	$(MAKE) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/src/speedStdRep.cpp.s
+.PHONY : src/speedStdRep.cpp.s
+
 src/split.o: src/split.cpp.o
 
 .PHONY : src/split.o
@@ -366,6 +393,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/speedStdRep.o"
+	@echo "... src/speedStdRep.i"
+	@echo "... src/speedStdRep.s"
 	@echo "... src/split.o"
 	@echo "... src/split.i"
 	@echo "... src/split.s"

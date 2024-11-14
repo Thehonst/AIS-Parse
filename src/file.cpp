@@ -239,33 +239,38 @@ void File::logWrite(std::map<uint32_t,Numb> Infos,Numb::AISType aistype)
       uint32_t count = 0; // 添加一个计数器
       for(uint32_t i = 0; i < it->second.freq.size(); i++)
       {
-        if(aistype==Numb::AISType::A)
+        if((aistype==Numb::AISType::A)||(this->t1.Type))
         {
           this->log << Time_Convert(it->second.freq[i])<< ":"<<speedStdRep(it->second.freq[i],t1.SOG,t1.NaviStatus)
-                    <<" ";
+                    <<"  ";
         }
         else if((aistype==Numb::AISType::B)&&(this->t18.Type))
         {
-          this->log << Time_Convert(it->second.freq[i])<< ":"<<speedStdRep(it->second.freq[i],t18.SOG,t18.NaviStatus)
-                    <<" ";
+          this->log << Time_Convert(it->second.freq[i])<< ":"<<speedStdRep(it->second.freq[i],t18.SOG,Numb::AISType::B)
+                    <<"  ";
         }
         else if((aistype==Numb::AISType::B)&&(this->t19.Type))
         {
-          this->log << Time_Convert(it->second.freq[i])<< ":"<<speedStdRep(it->second.freq[i],t19.SOG,t19.NaviStatus)
-                    <<" ";
+          this->log << Time_Convert(it->second.freq[i])<< ":"<<speedStdRep(it->second.freq[i],t19.SOG,Numb::AISType::B)
+                    <<"  ";
         }
-        else if(aistype==Numb::AISType::AIST)
+        else if((aistype==Numb::AISType::AtoN)&&(this->t21.Type))
         {
-          this->log << Time_Convert(it->second.freq[i])<< ":"<<speedStdRep(it->second.freq[i],t1.SOG,t1.NaviStatus)
-                    <<" ";
+          this->log << Time_Convert(it->second.freq[i])<< ":"<<speedStdRep(it->second.freq[i],t21.SOG,Numb::AISType::AtoN)
+                    <<"  ";
+        }
+        else if((aistype==Numb::AISType::AIST)&&(this->t24A.Type))
+        {
+          this->log << Time_Convert(it->second.freq[i])<< ":"<<speedStdRep(it->second.freq[i],t24A.SOG,Numb::AISType::AIST)
+                    <<"  ";
         }
         else 
         {
-          this->log << it->second.freq[i] << " ";
+          this->log << Time_Convert(it->second.freq[i]) << "  ";
         }
         count++; // 每输出一个元素，计数器加1
         // 每当计数器达到30时，输出一个换行符，并重置计数器
-        if(count == 60)
+        if(count == 21)
         {
             this->log << std::endl<<" ";
             count = 0; // 重置计数器
